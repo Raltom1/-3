@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Section with GIF & Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://static.vecteezy.com/system/resources/previews/004/404/690/original/seamless-pattern-of-valentine-s-day-objects-free-vector.jpg') no-repeat center center/cover;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+        }
+
+        .gif {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(255, 75, 75, 0.5);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 75, 75, 0.8);
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://www.bing.com/th/id/OGC.a3fe8d18a40ba1489cfca78c41f88152?pid=1.7&rurl=https%3a%2f%2fmedia.tenor.com%2fh2-Lqo4A_70AAAAM%2fbubu-dudu.gif&ehk=VHATAQnOpnkz5K9wu3O4AZn7dPe52RXeQ%2bMKQhm7MYs%3d" alt="GIF Animation" class="gif">
+        <h1>Please Click Me</h1>
+        <button class="btn" onclick="redirectToPage()">Click Here</button>
+    </div>
+
+    <script>
+        function redirectToPage() {
+            window.location.href = "index2.html";
+        }
+    </script>
+
+</body>
+</html>
